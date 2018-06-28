@@ -1,0 +1,22 @@
+<div class='card-columns'>
+  <div class="card">
+  <img class="card-img-top" [src]="heroe.img" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{heroe.nombre | uppercase}}</h5>
+    <p class="card-text">{{heroe.bio}}</p>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="card-text"><small class="text-muted">{{heroe.aparicion | date:'y'}}</small></p>
+  </div>
+  <div>
+  <!--<img class="card-img-top" src="assets/img/dc.jpg" alt="logo">-->
+  <!--
+  <div ng-switch on="selection" >
+   <div ng-switch-when="settings">Settings Div</div>
+   <span ng-switch-when="home">Home Span</span>
+   <span ng-switch-default>default</span>
+ </div>
+-->
+   <img src="assets/img/{{heroe.casa}}.jpg" class="img-fluid pull-xs-left" alt="logo">
+  </div>
+</div>
+</div>
